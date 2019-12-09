@@ -6,8 +6,12 @@
     background-color: red;
 }
 
-.test2 {
+.content-container {
     background-color: white;
+}
+
+.test2 {
+    background-color: blue;
 }
 
 .header-font {
@@ -36,6 +40,12 @@
 .password-text {
     font-family: Montserrat-Bold;
     font-size: 1.2em;
+    text-align: center;
+}
+
+.password-option-title {
+    font-family: Montserrat-Medium;
+    font-size: 1.0em;
     text-align: center;
 }
 
@@ -107,4 +117,21 @@ background-color: maroon;
 border-color: maroon;
 outline: none;
 box-shadow: none;
+}
+
+@media only screen and (max-width: 990px) {
+    .checkbox-container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .button-container {
+        flex-direction: column;
+    }
+    .clipboard-bttn {
+        margin-top: 1.0em;
+    }
 }
