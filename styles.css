@@ -1,0 +1,33 @@
+.background {
+    background-color: #e8e8e8;
+}
+
+.test {
+    background-color: red;
+}
+
+.test2 {
+    background-color: white;
+}
+
+.header-font {
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+    font-size: 2.0em;
+
+    border-bottom-color: #e8e8e8;
+    border-bottom-style: solid;
+    border-bottom-width: .1em;
+}
+
+.password-container {
+    border-color: black;
+    border-style: dashed;
+    border-width: .2em;
+
+    height: 12em;
+}
+
+.password-text {
+    font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+    font-size: 2.0em;
+}
