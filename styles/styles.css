@@ -24,10 +24,87 @@
     border-style: dashed;
     border-width: .2em;
 
-    height: 12em;
+    min-height: 12em;
+}
+
+.password-title {
+    font-family: Montserrat;
+    font-size: 1.4em;
+    text-align: center;
 }
 
 .password-text {
-    font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'sans-serif';
-    font-size: 2.0em;
+    font-family: Montserrat-Bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.button-container {
+    border-top-color: #e8e8e8;
+    border-top-style: solid;
+    border-top-width: .2em;
+}
+
+.generate-bttn {
+    background-color: maroon;
+    border-color: maroon;
+}
+
+.generate-bttn:hover {
+    background-color: maroon;
+    border-color: maroon;
+}
+
+.generate-bttn:active {
+    background-color: maroon;
+    border-color: maroon;
+}
+
+.generate-bttn:focus {
+    background-color: maroon;
+    border-color: maroon;   
+}
+
+.btn.generate-bttn {
+    color: #fff;
+    background-color: maroon;
+    border-color: maroon;
+}
+
+.btn.generate-bttn.focus,
+.btn.generate-bttn:focus {
+color: #fff;
+background-color: maroon;
+border-color: maroon;
+outline: none;
+box-shadow: none;
+}
+
+.btn.generate-bttn:hover {
+color: #fff;
+background-color: lightcoral;
+border-color: lightcoral;
+outline: none;
+box-shadow: none;
+}
+
+.btn.generate-bttn.active,
+.btn.generate-bttn:active {
+color: #fff;
+background-color: maroon;
+border-color: maroon;
+outline: none;
+}
+
+.btn.generate-bttn.active.focus,
+.btn.generate-bttn.active:focus,
+.btn.generate-bttn.active:hover,
+.btn.generate-bttn:active.focus,
+.btn.generate-bttn:active:focus,
+.btn.generate-bttn:active:hover {
+color: #fff;
+background-color: maroon;
+border-color: maroon;
+outline: none;
+box-shadow: none;
 }
