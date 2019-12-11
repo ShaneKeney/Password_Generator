@@ -1,4 +1,13 @@
 document.getElementById("generate-password").onclick = generatePassword;
+var numberOfCharInput = document.querySelector("#numberOfCharacterInput");
+var passwordEl = document.querySelector("#password");
+
+for(let i=8; i<=128; i++) {
+    let option = document.createElement("option");
+    option.setAttribute("value", i);
+    option.innerHTML = i
+    numberOfCharInput.appendChild(option);
+}
 
 function generatePassword() {
     let numberCheck = document.getElementById("numericCheckbox").checked;
@@ -12,7 +21,7 @@ function generatePassword() {
     }
 
     while(1) {
-        var numberOfCharacters = prompt("Input desired number of characters in password! \n MUST BE BETWEEN 8 AND 128");
+        var numberOfCharacters = numberOfCharInput.options[numberOfCharInput.selectedIndex].value;
         
         if(parseInt(numberOfCharacters) >= 8 && parseInt(numberOfCharacters) <= 128) { //is a valid entry
             //don't need to do anything just need to exit loop
@@ -98,5 +107,6 @@ function generatePassword() {
         generatedPassword[indexToAdd] = numbersArray[itemToAdd];
     }
 
-    console.log(generatedPassword.join(""));
+    passwordEl.textContent = generatedPassword.join("");
+    passwordEl.style.color = 'black';
 }

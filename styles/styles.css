@@ -81,6 +81,13 @@
     border-color: maroon;
 }
 
+#password {
+    font-family: Montserrat;
+    font-size: 1.0em;
+    text-align: center;
+    color: lightgray;
+}
+
 .btn.generate-bttn.focus,
 .btn.generate-bttn:focus {
 color: #fff;
