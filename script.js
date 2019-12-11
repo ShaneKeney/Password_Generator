@@ -1,6 +1,9 @@
 document.getElementById("generate-password").onclick = generatePassword;
+document.getElementById("copyBttn").onclick = copyToClipboard;
+
 var numberOfCharInput = document.querySelector("#numberOfCharacterInput");
 var passwordEl = document.querySelector("#password");
+var copyBttnEl = document.querySelector("#copyBttn");
 
 for(let i=8; i<=128; i++) {
     let option = document.createElement("option");
@@ -109,4 +112,17 @@ function generatePassword() {
 
     passwordEl.textContent = generatedPassword.join("");
     passwordEl.style.color = 'black';
+
+    //Enable copy functionality
+    copyBttnEl.disabled = false;
+}
+
+function copyToClipboard() {
+    var text = document.getElementById("password").innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
 }
